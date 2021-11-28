@@ -17,11 +17,11 @@ import numpy as np
 hog = cv2.HOGDescriptor()
 hog.setSVMDetector(cv2.HOGDescriptor_getDefaultPeopleDetector())
    
-cap = cv2.VideoCapture(r'\Users\ryanw\Downloads\airport_walking.mp4')
+cap = cv2.VideoCapture('videos/airport_walking.mp4')
 
 # cap = cv2.VideoCapture('people_closer.mp4')
    
-itjerations = 0
+iterations = 0
 frame_tracker = []
 people_counter = []
 FRAMES_PER_SEC = 30
